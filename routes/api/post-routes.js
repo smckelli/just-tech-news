@@ -22,8 +22,8 @@ router.get('/', (req, res) => {
         include: {
           model: User,
           attributes: ['username']
-      }
-    ]
+        }
+      }]
   })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
